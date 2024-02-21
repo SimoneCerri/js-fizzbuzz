@@ -10,7 +10,9 @@ for ( let x=1; x<=100; x++ )
         //put those results in HTML.
         let markup = " FizzBuzz ";
         let gameElement = document.querySelector(".game");
-        gameElement.append(markup);
+        let gamePiece = document.createElement('div');
+        gamePiece.append("Elemento")
+        //gameElement.append(markup);
     }
     //ELSE IF rest of(number / 5) = 0 print "Buzz".
     else if ((x % 5) === 0)
@@ -35,7 +37,7 @@ for ( let x=1; x<=100; x++ )
     {
         //console.log(x);
         //put those results in HTML.
-        let markup = ` ${x} `;
+        let markup = ` <div>${x}</div> `;
         let gameElement = document.querySelector(".game");
         gameElement.append(markup);
     }
