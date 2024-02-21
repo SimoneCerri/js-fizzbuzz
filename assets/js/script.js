@@ -1,4 +1,5 @@
 //print numbers in console with FOR cycle(1 - 100).
+let gameElement = document.querySelector(".game");
 for ( let x=1; x<=100; x++ )
 {
     //console.log(x);
@@ -8,48 +9,45 @@ for ( let x=1; x<=100; x++ )
     {
         //console.log("fizzbuzz");
         //put those results in HTML.
-        let markup = " FizzBuzz ";
-        let gameElement = document.querySelector(".game");
         let gamePiece = document.createElement("div");
-        let gamePieceContent = document.createTextNode(markup);
-        gamePiece.appendChild(gamePieceContent);
+        gamePiece.innerText = "SAVE";
         gameElement.appendChild(gamePiece);
+        gamePiece.className = "style_5_3";
     }
     //ELSE IF rest of(number / 5) = 0 print "Buzz".
     else if ((x % 5) === 0)
     {
         //console.log("buzz");
         //put those results in HTML.
-        let markup = " Buzz ";
-        let gameElement = document.querySelector(".game");
         let gamePiece = document.createElement("div");
-        let gamePieceContent = document.createTextNode(markup);
-        gamePiece.appendChild(gamePieceContent);
+        gamePiece.innerText = "RUN";
         gameElement.appendChild(gamePiece);
+        gamePiece.className = "style_5";
+        //elemento.innerHTML += `<div class="classe-che-mi-pare">${markup}</div>`
+
+        /*let gamePieceContent = document.createTextNode(markup);
+        gamePiece.appendChild(gamePieceContent);*/
+        
     }
     //ELSE IF rest of(number / 3) = 0 print "Fizz".
     else if ((x % 3) === 0) 
     {
         //console.log("fizz");
         //put those results in HTML.
-        let markup = " Fizz ";
-        let gameElement = document.querySelector(".game");
         let gamePiece = document.createElement("div");
-        let gamePieceContent = document.createTextNode(markup);
-        gamePiece.appendChild(gamePieceContent);
+        gamePiece.innerText = "PIECE";
         gameElement.appendChild(gamePiece);
+        gamePiece.className = "style_3";
     }
     //ELSE print number.
     else
     {
         //console.log(x);
         //put those results in HTML.
-        let markup = x;
-        let gameElement = document.querySelector(".game");
         let gamePiece = document.createElement("div");
-        let gamePieceContent = document.createTextNode(markup);
-        gamePiece.appendChild(gamePieceContent);
+        gamePiece.innerText = `${x}`;
         gameElement.appendChild(gamePiece);
+        gamePiece.className = "style_number";
     }
 };
 

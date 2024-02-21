@@ -16,3 +16,44 @@
 {
     font-size: 80px;
 }
+
+.style_3
+{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    line-height: 100px;
+    text-align: center;
+}
+
+.style_5
+{
+    width: 100px;
+    height: 100px;
+    background-color: paleturquoise;
+    line-height: 100px;
+    text-align: center;
+}
+
+.style_5_3
+{
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    line-height: 100px;
+    text-align: center;
+}
+
+.style_number
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(150, 31, 31);
+    line-height: 100px;
+    text-align: center;
+}
+
+.scroll
+{
+    overflow-y: auto;
+}
