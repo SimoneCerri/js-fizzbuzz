@@ -10,7 +10,7 @@ for ( let x=1; x<=100; x++ )
         //put those results in HTML.
         let markup = " FizzBuzz ";
         let gameElement = document.querySelector(".game");
-        let gamePiece = document.createElement('div');
+        let gamePiece = document.createElement(`<div>${markup}</div>`);
         gamePiece.append("Elemento")
         //gameElement.append(markup);
     }
