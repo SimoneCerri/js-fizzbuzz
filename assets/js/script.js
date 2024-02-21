@@ -1,6 +1,6 @@
 //print numbers in console with FOR cycle(1 - 100).
 let gameElement = document.querySelector(".game");
-for ( let x=1; x<=100; x++ )
+for ( let x=1; x<=108; x++ )
 {
     //console.log(x);
 
