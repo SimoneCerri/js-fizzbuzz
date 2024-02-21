@@ -12,7 +12,7 @@ for ( let x=1; x<=100; x++ )
     {
         console.log("buzz");
     }
-    else if ((x % 5) === 0) && ((x % 3) === 0)
+    else if (((x % 5) === 0) && ((x % 3) === 0))
     {
         console.log("fizzbuzz");
     }
