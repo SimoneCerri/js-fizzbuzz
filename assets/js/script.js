@@ -10,8 +10,9 @@ for ( let x=1; x<=100; x++ )
         //put those results in HTML.
         let markup = " FizzBuzz ";
         let gameElement = document.querySelector(".game");
-        let gamePiece = document.createElement(`<div>${markup}</div>`);
-        gamePiece.append("Elemento")
+        let gamePiece = document.createElement("div");
+        let gamePieceContent = document.createTextNode(markup);
+        gamePiece.appendChild(gamePieceContent);
         //gameElement.append(markup);
     }
     //ELSE IF rest of(number / 5) = 0 print "Buzz".
